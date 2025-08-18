@@ -1,6 +1,7 @@
 public class Gerente extends Empregado {
 
     public Gerente(double salarioFixo) {
+
         super(salarioFixo);
     }
 
@@ -15,8 +16,4 @@ public class Gerente extends Empregado {
         return 0.0;
     }
 
-    @Override
-    public double calcularSalarioTotal(Departamento departamento) {
-        return getSalarioFixo() + calcularBonus(departamento);
-    }
 }
