@@ -1,3 +1,1 @@
-public class Cachorro extends Animal {
-
-}
+class Cachorro extends Animal {}
