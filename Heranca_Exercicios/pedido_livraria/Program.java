@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class Program {
     public static void main(String[] args) {
         Locale.setDefault(new Locale("pt", "BR"));
@@ -12,17 +11,23 @@ public class Program {
 
         // Pedido 1
         ItemPedido[] itensPedido1 = new ItemPedido[] {new ItemPedido(livro1, 1), new ItemPedido(dvd2, 1)};
+
         Pedido pedido1 = new Pedido(0, itensPedido1);
+
         System.out.printf("Total Pedido: %.2f\n", pedido1.calcularTotal());
 
         // Pedido 2
         ItemPedido[] itensPedido2 = new ItemPedido[] {new ItemPedido(livro1, 1), new ItemPedido(dvd2, 1)};
+
         Pedido pedido2 = new Pedido(10, itensPedido2);
+
         System.out.printf("Total Pedido: %.2f\n", pedido2.calcularTotal());
 
         // Pedido 3
         ItemPedido[] itensPedido3 = new ItemPedido[] { new ItemPedido(livro2, 1),  new ItemPedido(livro3, 2), new ItemPedido(dvd1, 1)};
+
         Pedido pedido3 = new Pedido(5, itensPedido3);
+
         System.out.printf("Total Pedido: %.2f\n", pedido3.calcularTotal());
 
         // Pedido 4
@@ -33,7 +38,9 @@ public class Program {
                 new ItemPedido(dvd1, 1),
                 new ItemPedido(dvd2, 2)
         };
+
         Pedido pedido4 = new Pedido(5, itensPedido4);
+
         System.out.printf("Total Pedido: %.2f\n", pedido4.calcularTotal());
     }
 }
