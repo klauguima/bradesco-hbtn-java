@@ -40,13 +40,11 @@ public class ContaBancariaBasica {
         this.saldo -= valor;
     }
 
-    // Atualização mensal: juros primeiro, tarifa depois
+    // em ContaBancariaBasica.java
     public void aplicarAtualizacaoMensal() {
         double jurosMensal = (this.taxaJurosAnual / 12.0) / 100.0;
-        this.saldo += this.saldo * jurosMensal; // aplica juros
-        this.saldo -= 2.0;                      // depois desconta tarifa fixa
+        this.saldo += this.saldo * jurosMensal; // 1) aplica juros
+        this.saldo -= 2.0;                      // 2) desconta tarifa fixa
     }
-
-
 
 }
